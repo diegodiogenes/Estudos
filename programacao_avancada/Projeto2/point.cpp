@@ -1,5 +1,6 @@
 #include "point.h"
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -50,6 +51,11 @@ Point Point::sub(Point p1)
     p.y = y-p1.y;
 
     return p;
+}
+
+float Point::norma()
+{
+    return sqrt(x*x+y*y);
 }
 
 void Point::translada(float a, float b)
