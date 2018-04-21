@@ -25,12 +25,12 @@ int main()
 
     pol.adicionaVertice(0,2);
     pol.adicionaVertice(2,0);
+
     pol.adicionaVertice(0,0);
 
     quantidade = pol.quantidadeVertice();
 
     cout << quantidade;
-
 
     return 0;
 }
