@@ -11,6 +11,7 @@ public:
     Poligono();
     void adicionaVertice(float x, float y);
     int quantidadeVertice();
+    float area();
 };
 
 #endif // POLIGONO_H

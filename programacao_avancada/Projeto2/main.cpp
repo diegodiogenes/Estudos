@@ -6,11 +6,11 @@ using namespace std;
 
 int main()
 {
-    Point p1, p, p2;
+    Point p1, p2, p;
     Poligono pol;
     int quantidade;
 
-    //Testando Point sub(Point p1)
+    //Subtração entre pontos
     p1.setXY(-5,2);
     cout << "p1:" << endl;
     p1.imprime();
@@ -23,14 +23,17 @@ int main()
     cout << "p2:" << endl;
     p2.imprime();
 
-    pol.adicionaVertice(0,2);
+    //Adição de vértices ao polígono
     pol.adicionaVertice(2,0);
-
+    pol.adicionaVertice(0,2);
     pol.adicionaVertice(0,0);
-
+    //Quantidade de vértices do polígono
     quantidade = pol.quantidadeVertice();
 
-    cout << quantidade;
+    cout << quantidade << endl;
+
+    //Área do polígono
+    cout << pol.area() << endl;
 
     return 0;
 }
