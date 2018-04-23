@@ -14,6 +14,7 @@ public:
     float area();
     void  imprime();
     void  translada(float a, float b);
+    void rotaciona(float teta, Point a);
 };
 
 #endif // POLIGONO_H

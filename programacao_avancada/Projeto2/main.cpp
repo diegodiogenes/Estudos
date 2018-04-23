@@ -8,6 +8,8 @@ int main()
 {
     Point p1, p2, p;
     Poligono pol;
+    Point trans;
+    trans.setXY(0.0,0.0);
     int quantidade;
 
     //Subtração entre pontos
@@ -38,10 +40,19 @@ int main()
     //Transladar o polígono (INCOMPLETO. O 'FOR' DA FUNÇÃO TRANSLADA NÃO ESTÁ FUNCIONANDO. DEVE SER UM ERRO DE UTILIZAÇÃO DO PTR)
     pol.imprime();
 
-    pol.translada(2,4);
-    cout << endl;
+   // pol.translada(20,40);
+    cout << "Poligono Transladado" << endl;
     pol.imprime();
 
+    cout << "Area do Poligono Transladado" << endl;
+    cout << pol.area() << endl;
+
+    pol.rotaciona(90, trans);
+
+    cout << "Poligono Rotacionado" << endl;
+    pol.imprime();
+
+    cout << "Area do poligono rotacionado" << endl;
     cout << pol.area() << endl;
 
     return 0;
