@@ -27,12 +27,21 @@ int main()
     pol.adicionaVertice(2,0);
     pol.adicionaVertice(0,2);
     pol.adicionaVertice(0,0);
+
     //Quantidade de vértices do polígono
     quantidade = pol.quantidadeVertice();
-
     cout << quantidade << endl;
 
     //Área do polígono
+    cout << pol.area() << endl;
+
+    //Transladar o polígono (INCOMPLETO. O 'FOR' DA FUNÇÃO TRANSLADA NÃO ESTÁ FUNCIONANDO. DEVE SER UM ERRO DE UTILIZAÇÃO DO PTR)
+    pol.imprime();
+
+    pol.translada(2,4);
+    cout << endl;
+    pol.imprime();
+
     cout << pol.area() << endl;
 
     return 0;

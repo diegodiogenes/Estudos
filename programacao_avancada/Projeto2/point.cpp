@@ -60,8 +60,8 @@ float Point::norma()
 
 void Point::translada(float a, float b)
 {
-    x = x + a;
-    y = y + b;
+    x += a;
+    y += b;
 }
 
 void Point::imprime()
