@@ -27,12 +27,12 @@ float Poligono::area()
     //float _x = Point.getX(); _y = Point.getY();
     float soma1 = 0, soma2 = 0;
 
-    for(i=0; i++; i<(pos-1)){
+    for(i=0;i<(pos-1); i++){
         soma1 += (v[i].getX())*(v[i+1].getY());
     }
     soma1 += (v[i].getX())*(v[0].getY());
 
-    for(i=0; i++; i<(pos-1)){
+    for(i=0;i<(pos-1); i++){
         soma2 += (v[i].getY())*(v[i+1].getX());
     }
     soma2 += (v[i].getY())*(v[0].getX());
@@ -54,7 +54,7 @@ void Poligono::imprime()
 
 void Poligono::translada(float a, float b)
 {
-    for(int i=0; i++; i<pos){
+    for(int i=0; i<pos; i++){
         v[i].translada(a,b);
     }
 }
