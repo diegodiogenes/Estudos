@@ -13,14 +13,13 @@ public:
      * @brief Point
      */
     Point();
-<<<<<<< HEAD
+
     Point(float _x, float _y);
-=======
+
     /**
      * @brief setX
      * @param _x
      */
->>>>>>> 6ce26f18debe8d2d64c9aaaf1ff7273e8f992023
     void setX(float _x);
     /**
      * @brief setY
