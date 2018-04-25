@@ -67,7 +67,8 @@ void Poligono::rotaciona(float teta, Point a)
     for(int i=0; i<pos; i++){
         aux.setXY(v[i].getX(),v[i].getY());
         aux.imprime();
-        v[i].setX((aux.getX() - a.getX())*cos(teta) - (aux.getY() - a.getY())*sin(teta));
-        v[i].setY((aux.getX() - a.getX())*sin(teta) + (aux.getY() - a.getY())*cos(teta));
+        //v[i].setXY(v[i].getX()-a.getX(),aux.getY()-a.getY());
+        v[i].setX(a.getX()+(aux.getX() - a.getX())*cos(teta) - (aux.getY() - a.getY())*sin(teta));
+        v[i].setY(a.getY()+(aux.getX() - a.getX())*sin(teta) + (aux.getY() - a.getY())*cos(teta));
     }
 }

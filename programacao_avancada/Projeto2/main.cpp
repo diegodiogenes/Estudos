@@ -9,7 +9,7 @@ int main()
     Point p1, p2, p;
     Poligono pol;
     Point trans;
-    trans.setXY(0.0,0.0);
+    trans.setXY(30,20);
     int quantidade;
 
     //Subtração entre pontos
@@ -47,7 +47,7 @@ int main()
     cout << "Area do Poligono Transladado" << endl;
     cout << pol.area() << endl;
 
-    pol.rotaciona(90, trans);
+    pol.rotaciona(180, trans);
 
     cout << "Poligono Rotacionado" << endl;
     pol.imprime();
