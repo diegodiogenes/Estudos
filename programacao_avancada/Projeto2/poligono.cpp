@@ -6,7 +6,15 @@ using namespace std;
 
 Poligono::Poligono()
 {
+    v = new Point[100];
+}
 
+Poligono::Poligono(int qtd){
+   v = new Point[qtd];
+}
+
+Poligono::~Poligono(){
+    delete [] v;
 }
 
 void Poligono::adicionaVertice(float x, float y)

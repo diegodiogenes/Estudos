@@ -10,7 +10,7 @@ class Poligono
     /**
      * @brief v
      */
-    Point *v = new Point[100];
+    Point *v;
     /**
      * @brief pos
      */
@@ -20,6 +20,8 @@ public:
      * @brief Poligono
      */
     Poligono();
+    Poligono(int qtd);
+    ~Poligono();
     /**
      * @brief adicionaVertice
      * @param x
