@@ -54,7 +54,7 @@ int main()
     cout << "Area do Poligono Transladado" << endl;
     cout << pol.area() << endl;
 
-    pol.rotaciona(90, trans);
+    pol.rotaciona(180, trans);
 
     cout << "Poligono Rotacionado" << endl;
     pol.imprime();

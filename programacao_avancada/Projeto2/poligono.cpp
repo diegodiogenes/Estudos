@@ -70,9 +70,8 @@ void Poligono::rotaciona(float teta, Point a)
     teta = (teta*M_PI)/180;
     for(int i=0; i<pos; i++){
         aux = v[i].sub(a);
-        novo_x = aux.getX()*cos(teta) - aux.getY()*sin(teta);
-        novo_y = aux.getX()*sin(teta) + aux.getY()*cos(teta);
+        novo_x = a.getX()+aux.getX()*cos(teta) - aux.getY()*sin(teta);
+        novo_y = a.getY()+aux.getX()*sin(teta) + aux.getY()*cos(teta);
         v[i].setXY(novo_x,novo_y);
-        v[i].add(a);
     }
 }
