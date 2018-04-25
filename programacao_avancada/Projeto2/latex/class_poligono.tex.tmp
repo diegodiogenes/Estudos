@@ -1,0 +1,161 @@
+\hypertarget{class_poligono}{}\section{Poligono Class Reference}
+\label{class_poligono}\index{Poligono@{Poligono}}
+
+
+The \mbox{\hyperlink{class_poligono}{Poligono}} class permite a criação e manipulação de polígonos.  
+
+
+
+
+{\ttfamily \#include $<$poligono.\+h$>$}
+
+
+
+Inheritance diagram for Poligono\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_poligono_a2e8dc5f5bbdc2ebf17e0c0e0eac1ba1c}{Poligono}} (int qtd)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_poligono}{Poligono}} é o construtor da classe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_poligono_a97840112510d994137acef11ca9ac60e}{adiciona\+Vertice}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em adiciona\+Vertice Cria novos vértices ao polígono. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_poligono_a37b674c6d37b8f19ca3db1ca941e808c}{quantidade\+Vertice}} ()
+\begin{DoxyCompactList}\small\item\em quantidade\+Vertice nos dá a quantidade de vértices no polígono. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_poligono_a7f66c446f86c19118663ef1b2c8a4be6}{area}} ()
+\begin{DoxyCompactList}\small\item\em area O método calcula a área do polígono. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_poligono_a599dbf4f9b8a096a111a6bafb2a5e3ab}{imprime}} ()
+\begin{DoxyCompactList}\small\item\em imprime é o método que imprime os vértices do polígono. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_poligono_adbf605dfd0419b7301c9be0ec1dbe41b}{translada}} (float a, float b)
+\begin{DoxyCompactList}\small\item\em traslada é o método que translada o polígono no plano cartesiano. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_poligono_abe20d0875e26489347347a61e0763e14}{rotaciona}} (float teta, \mbox{\hyperlink{class_point}{Point}} a)
+\begin{DoxyCompactList}\small\item\em rotaciona é o método que rotaciona o polígono no plano cartesiano. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_poligono}{Poligono}} class permite a criação e manipulação de polígonos. 
+
+O polígono é convexo, possiu 3$<$=n$<$=100 vértices e está inteiramente no plano cartesiano bidimensional. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_poligono_a2e8dc5f5bbdc2ebf17e0c0e0eac1ba1c}\label{class_poligono_a2e8dc5f5bbdc2ebf17e0c0e0eac1ba1c}} 
+\index{Poligono@{Poligono}!Poligono@{Poligono}}
+\index{Poligono@{Poligono}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{Poligono()}{Poligono()}}
+{\footnotesize\ttfamily Poligono\+::\+Poligono (\begin{DoxyParamCaption}\item[{int}]{qtd }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_poligono}{Poligono}} é o construtor da classe. 
+
+Nele, um espaço para 100 pontos é liberado na memória, número máximo de vértices do polígono e o endereço da memória é guardado em um ponteiro para \mbox{\hyperlink{class_point}{Point}} que pertence à classe \mbox{\hyperlink{class_poligono}{Poligono}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em qtd} & Quantidade de vértices do polígono definido pelo usuário. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_poligono_a97840112510d994137acef11ca9ac60e}\label{class_poligono_a97840112510d994137acef11ca9ac60e}} 
+\index{Poligono@{Poligono}!adiciona\+Vertice@{adiciona\+Vertice}}
+\index{adiciona\+Vertice@{adiciona\+Vertice}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{adiciona\+Vertice()}{adicionaVertice()}}
+{\footnotesize\ttfamily void Poligono\+::adiciona\+Vertice (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+adiciona\+Vertice Cria novos vértices ao polígono. 
+
+Ao criar novos vértices, o polígono passará a ser outro. A adição de vértices deve ser feita no sentido anti-\/horário e o polígono sempre deverá ser convexo.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Abscissa do ponto do novo vértice.\\
+\hline
+{\em y} & Ordenada do ponto do novo vértice. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_poligono_a7f66c446f86c19118663ef1b2c8a4be6}\label{class_poligono_a7f66c446f86c19118663ef1b2c8a4be6}} 
+\index{Poligono@{Poligono}!area@{area}}
+\index{area@{area}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{area()}{area()}}
+{\footnotesize\ttfamily float Poligono\+::area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+area O método calcula a área do polígono. 
+
+A área do polígono é calculada a partir dos seus vértices, ou melhor, usando uma relação entre suas distâncias, portanto, não importa a posição do polígono no espaço bidimensional, sua área será sempre a mesma.
+
+\begin{DoxyReturn}{Returns}
+O valor da área do polígono, em u.\+a. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_poligono_a599dbf4f9b8a096a111a6bafb2a5e3ab}\label{class_poligono_a599dbf4f9b8a096a111a6bafb2a5e3ab}} 
+\index{Poligono@{Poligono}!imprime@{imprime}}
+\index{imprime@{imprime}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{imprime()}{imprime()}}
+{\footnotesize\ttfamily void Poligono\+::imprime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+imprime é o método que imprime os vértices do polígono. 
+
+O método \char`\"{}varre\char`\"{} todos os vértices do polígono, um a um, e utiliza a função \mbox{\hyperlink{class_poligono_a599dbf4f9b8a096a111a6bafb2a5e3ab}{imprime()}} já implementada na classe \mbox{\hyperlink{class_point}{Point}} para imprimi-\/los na tela, com a notação (x,y). \mbox{\Hypertarget{class_poligono_a37b674c6d37b8f19ca3db1ca941e808c}\label{class_poligono_a37b674c6d37b8f19ca3db1ca941e808c}} 
+\index{Poligono@{Poligono}!quantidade\+Vertice@{quantidade\+Vertice}}
+\index{quantidade\+Vertice@{quantidade\+Vertice}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{quantidade\+Vertice()}{quantidadeVertice()}}
+{\footnotesize\ttfamily int Poligono\+::quantidade\+Vertice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+quantidade\+Vertice nos dá a quantidade de vértices no polígono. 
+
+\begin{DoxyReturn}{Returns}
+número inteiro de vértices do polígono. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_poligono_abe20d0875e26489347347a61e0763e14}\label{class_poligono_abe20d0875e26489347347a61e0763e14}} 
+\index{Poligono@{Poligono}!rotaciona@{rotaciona}}
+\index{rotaciona@{rotaciona}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{rotaciona()}{rotaciona()}}
+{\footnotesize\ttfamily void Poligono\+::rotaciona (\begin{DoxyParamCaption}\item[{float}]{teta,  }\item[{\mbox{\hyperlink{class_point}{Point}}}]{a }\end{DoxyParamCaption})}
+
+
+
+rotaciona é o método que rotaciona o polígono no plano cartesiano. 
+
+O método \char`\"{}varre\char`\"{} todos os vértices do polígono, um a um, e utiliza uma matriz de rotação 2x2 para modificar os valores de x e y do vértice, modificando os valores dentro da classe, porém, mantendo a estrutura do polígono.
+
+
+\begin{DoxyParams}{Parameters}
+{\em teta} & é o ângulo(em graus) em que o polígono será rotacionado em relação ao ponto de referência.\\
+\hline
+{\em a} & é o ponto de referência ao qual o polígono será rotacionado. Observe que esse ponto não é, necessariamente, a origem ou está dentro do próprio polígono. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_poligono_adbf605dfd0419b7301c9be0ec1dbe41b}\label{class_poligono_adbf605dfd0419b7301c9be0ec1dbe41b}} 
+\index{Poligono@{Poligono}!translada@{translada}}
+\index{translada@{translada}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{translada()}{translada()}}
+{\footnotesize\ttfamily void Poligono\+::translada (\begin{DoxyParamCaption}\item[{float}]{a,  }\item[{float}]{b }\end{DoxyParamCaption})}
+
+
+
+traslada é o método que translada o polígono no plano cartesiano. 
+
+O método \char`\"{}varre\char`\"{} todos os vértices do polígono, um a um, e utiliza a função \mbox{\hyperlink{class_poligono_adbf605dfd0419b7301c9be0ec1dbe41b}{translada()}} já implementada na classe \mbox{\hyperlink{class_point}{Point}} para translada-\/los, modificando os valores dentro da classe, porém, mantendo a estrutura do polígono.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & é o valor que será somado à abscissa.\\
+\hline
+{\em b} & é o valor que será somado à ordenada. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/dorgi/\+Desktop/\+Estudos/programacao\+\_\+avancada/\+Projeto2/poligono.\+h\item 
+C\+:/\+Users/dorgi/\+Desktop/\+Estudos/programacao\+\_\+avancada/\+Projeto2/poligono.\+cpp\end{DoxyCompactItemize}

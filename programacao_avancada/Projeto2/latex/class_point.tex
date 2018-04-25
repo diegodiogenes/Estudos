@@ -1,0 +1,241 @@
+\hypertarget{class_point}{}\section{Point Class Reference}
+\label{class_point}\index{Point@{Point}}
+
+
+The \mbox{\hyperlink{class_point}{Point}} class permite a criação e manipulação de pontos no plano cartesiano bidimensional.  
+
+
+
+
+{\ttfamily \#include $<$point.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_point_a6524332fa4d321ff0a001366a732c7b6}{Point}} (float \+\_\+x, float \+\_\+y)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_point}{Point}} é o construtor da classe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_point_a428a1676e2fdec6753c42011a1d59d18}{setX}} (float \+\_\+x)
+\begin{DoxyCompactList}\small\item\em setX atribui um valor a x. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_point_a9868c4601b0ea0c2d0de20fe41ee0e49}{setY}} (float \+\_\+y)
+\begin{DoxyCompactList}\small\item\em setY atribui um valor a y. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_point_ab5385c6d9bfa841e641e4709fc9f14cc}{set\+XY}} (float \+\_\+x, float \+\_\+y)
+\begin{DoxyCompactList}\small\item\em set\+XY atribui valores a x e y. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_point_a9aa94b8fd07296e64d304ef3750db113}{getX}} (void)
+\begin{DoxyCompactList}\small\item\em getX captura o valor de x. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_point_a2444daa96871c89614510bc4bfcd19ce}{getY}} (void)
+\begin{DoxyCompactList}\small\item\em getX captura o valor de y. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_point_a9dbea84b07b0a8ec3bbb9e58b3d15899}{add}} (\mbox{\hyperlink{class_point}{Point}} p1)
+\begin{DoxyCompactList}\small\item\em add soma pontos. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_point}{Point}} \mbox{\hyperlink{class_point_a9cf2c53b0a4e6282a6712824bb4e9b00}{sub}} (\mbox{\hyperlink{class_point}{Point}} p1)
+\begin{DoxyCompactList}\small\item\em sub subtrai pontos. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_point_abd2618d1f505d9392893273a66e7c9b2}{norma}} ()
+\begin{DoxyCompactList}\small\item\em norma calcula a distância entre dois pontos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_point_ad9676e36f3444534b609e3c68422239a}{translada}} (float a, float b)
+\begin{DoxyCompactList}\small\item\em translada o ponto pertence à classe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_point_a1fb5c2501c27ab2cbc99d06c2a26a741}{imprime}} ()
+\begin{DoxyCompactList}\small\item\em imprime o ponto na tela. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_point}{Point}} class permite a criação e manipulação de pontos no plano cartesiano bidimensional. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_point_a6524332fa4d321ff0a001366a732c7b6}\label{class_point_a6524332fa4d321ff0a001366a732c7b6}} 
+\index{Point@{Point}!Point@{Point}}
+\index{Point@{Point}!Point@{Point}}
+\subsubsection{\texorpdfstring{Point()}{Point()}}
+{\footnotesize\ttfamily Point\+::\+Point (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x,  }\item[{float}]{\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_point}{Point}} é o construtor da classe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+x} & é a posição do ponto em relação ao eixo das abscissas.\\
+\hline
+{\em \+\_\+y} & é a posição do ponto em relação ao eixo das ordenadas. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_point_a9dbea84b07b0a8ec3bbb9e58b3d15899}\label{class_point_a9dbea84b07b0a8ec3bbb9e58b3d15899}} 
+\index{Point@{Point}!add@{add}}
+\index{add@{add}!Point@{Point}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} Point\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}}}]{p1 }\end{DoxyParamCaption})}
+
+
+
+add soma pontos. 
+
+O método permite que o ponto pertencente à classe (de coordenadas (x,y) quaisquer) seja somado ao ponto que é recebido como parâmetro (de coordenadas (x1,y1) quaisquer). A soma é feita com cada coordenada por vez, i.\+e., as abscissas são somadas e, na sequência, as ordenadas.
+
+x2 = x + x1; y2 = y + y1;
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & é o ponto de coordenadas (x1,y1) que será somado ao ponto (x,y) da classe.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+um ponto de coordenadas (x2,y2), resultado da soma entre os pontos. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_point_a9aa94b8fd07296e64d304ef3750db113}\label{class_point_a9aa94b8fd07296e64d304ef3750db113}} 
+\index{Point@{Point}!getX@{getX}}
+\index{getX@{getX}!Point@{Point}}
+\subsubsection{\texorpdfstring{get\+X()}{getX()}}
+{\footnotesize\ttfamily float Point\+::getX (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+getX captura o valor de x. 
+
+O método permite que o valor da abscissa seja retornado sem que esse seja alterado.
+
+\begin{DoxyReturn}{Returns}
+um float com mesmo valor de x. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_point_a2444daa96871c89614510bc4bfcd19ce}\label{class_point_a2444daa96871c89614510bc4bfcd19ce}} 
+\index{Point@{Point}!getY@{getY}}
+\index{getY@{getY}!Point@{Point}}
+\subsubsection{\texorpdfstring{get\+Y()}{getY()}}
+{\footnotesize\ttfamily float Point\+::getY (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+getX captura o valor de y. 
+
+O método permite que o valor da ordenada seja retornado sem que esse seja alterado.
+
+\begin{DoxyReturn}{Returns}
+um float com mesmo valor de y. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_point_a1fb5c2501c27ab2cbc99d06c2a26a741}\label{class_point_a1fb5c2501c27ab2cbc99d06c2a26a741}} 
+\index{Point@{Point}!imprime@{imprime}}
+\index{imprime@{imprime}!Point@{Point}}
+\subsubsection{\texorpdfstring{imprime()}{imprime()}}
+{\footnotesize\ttfamily void Point\+::imprime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+imprime o ponto na tela. 
+
+O ponto será impresso na tela na forma (x,y), ou seja, a coordenada x e a y. \mbox{\Hypertarget{class_point_abd2618d1f505d9392893273a66e7c9b2}\label{class_point_abd2618d1f505d9392893273a66e7c9b2}} 
+\index{Point@{Point}!norma@{norma}}
+\index{norma@{norma}!Point@{Point}}
+\subsubsection{\texorpdfstring{norma()}{norma()}}
+{\footnotesize\ttfamily float Point\+::norma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+norma calcula a distância entre dois pontos. 
+
+Dado o ponto de coordenadas (x,y), pertencente à classe e o ponto recebido como parâmetro, de coordenadas (x1,y1), podemos calcular sua distância/norma pela seguinte equação\+: $\sqrt{(x-x_1)^2+(y-y_1)^2}$
+
+\begin{DoxyReturn}{Returns}
+a distância entre o ponto da classe e o ponto dado como parâmetro. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_point_a428a1676e2fdec6753c42011a1d59d18}\label{class_point_a428a1676e2fdec6753c42011a1d59d18}} 
+\index{Point@{Point}!setX@{setX}}
+\index{setX@{setX}!Point@{Point}}
+\subsubsection{\texorpdfstring{set\+X()}{setX()}}
+{\footnotesize\ttfamily void Point\+::setX (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x }\end{DoxyParamCaption})}
+
+
+
+setX atribui um valor a x. 
+
+O método permite a atribuição de um valor dado pelo usuário à posição x do ponto.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+x} & recebe o valor da abscissa. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_point_ab5385c6d9bfa841e641e4709fc9f14cc}\label{class_point_ab5385c6d9bfa841e641e4709fc9f14cc}} 
+\index{Point@{Point}!set\+XY@{set\+XY}}
+\index{set\+XY@{set\+XY}!Point@{Point}}
+\subsubsection{\texorpdfstring{set\+X\+Y()}{setXY()}}
+{\footnotesize\ttfamily void Point\+::set\+XY (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x,  }\item[{float}]{\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+set\+XY atribui valores a x e y. 
+
+O método permite a atribuição de um valor dado pelo usuário às posições x e y do ponto, respectivamente.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+x} & recebe o valor da abscissa.\\
+\hline
+{\em \+\_\+y} & recebe o valor da ordenada. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_point_a9868c4601b0ea0c2d0de20fe41ee0e49}\label{class_point_a9868c4601b0ea0c2d0de20fe41ee0e49}} 
+\index{Point@{Point}!setY@{setY}}
+\index{setY@{setY}!Point@{Point}}
+\subsubsection{\texorpdfstring{set\+Y()}{setY()}}
+{\footnotesize\ttfamily void Point\+::setY (\begin{DoxyParamCaption}\item[{float}]{\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+setY atribui um valor a y. 
+
+O método permite a atribuição de um valor dado pelo usuário à posição y do ponto.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+y} & recebe o valor da ordenada. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_point_a9cf2c53b0a4e6282a6712824bb4e9b00}\label{class_point_a9cf2c53b0a4e6282a6712824bb4e9b00}} 
+\index{Point@{Point}!sub@{sub}}
+\index{sub@{sub}!Point@{Point}}
+\subsubsection{\texorpdfstring{sub()}{sub()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} Point\+::sub (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}}}]{p1 }\end{DoxyParamCaption})}
+
+
+
+sub subtrai pontos. 
+
+O método permite subtrair do ponto pertencente à classe (de coordenadas (x,y) quaisquer), um ponto que é recebido como parâmetro (de coordenadas (x1,y1) quaisquer). A subtração é feita com cada coordenada por vez, i.\+e., as abscissas são subtraidas e, na sequência, as ordenadas.
+
+x2 = x -\/ x1; y2 = y -\/ y1;
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & é o ponto de coordenadas (x1,y1) que será subtraido do ponto (x,y) da classe.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+um ponto de coordenadas (x2,y2), resultado da soma entre os pontos. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_point_ad9676e36f3444534b609e3c68422239a}\label{class_point_ad9676e36f3444534b609e3c68422239a}} 
+\index{Point@{Point}!translada@{translada}}
+\index{translada@{translada}!Point@{Point}}
+\subsubsection{\texorpdfstring{translada()}{translada()}}
+{\footnotesize\ttfamily void Point\+::translada (\begin{DoxyParamCaption}\item[{float}]{a,  }\item[{float}]{b }\end{DoxyParamCaption})}
+
+
+
+translada o ponto pertence à classe. 
+
+O método permite que o ponto (x,y) que pertence à classe tenha sua coordenada transladadas de acordo com os valores recebidos nos dois parâmetros. Assim, os valores de x e y são modificados dentro da classe.
+
+x = x + a; y = y + b;
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & é o valor que será somado à abscissa.\\
+\hline
+{\em b} & é o valor que será somado à ordenada. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/dorgi/\+Desktop/\+Estudos/programacao\+\_\+avancada/\+Projeto2/point.\+h\item 
+C\+:/\+Users/dorgi/\+Desktop/\+Estudos/programacao\+\_\+avancada/\+Projeto2/point.\+cpp\end{DoxyCompactItemize}
