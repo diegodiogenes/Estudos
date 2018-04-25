@@ -1,6 +1,7 @@
 #include <iostream>
 #include "point.h"
 #include "poligono.h"
+#include "retangulo.h"
 
 using namespace std;
 
@@ -9,7 +10,12 @@ int main()
     Point p1, p2, p;
     Poligono pol;
     Point trans;
-    trans.setXY(0.0,0.0);
+    trans.setXY(0,0);
+
+    Retangulo ret(0,0,3,4);
+
+    ret.imprime();
+
     int quantidade;
 
     //Subtração entre pontos
@@ -26,9 +32,10 @@ int main()
     p2.imprime();
 
     //Adição de vértices ao polígono
+    pol.adicionaVertice(0,0);
     pol.adicionaVertice(2,0);
     pol.adicionaVertice(0,2);
-    pol.adicionaVertice(0,0);
+    pol.adicionaVertice(2,2);
 
     //Quantidade de vértices do polígono
     quantidade = pol.quantidadeVertice();

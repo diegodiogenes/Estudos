@@ -9,6 +9,12 @@ Point::Point()
 
 }
 
+Point::Point(float _x, float _y)
+{
+    x = _x;
+    y = _y;
+}
+
 void Point::setX(float _x)
 {
     x = _x;
@@ -66,7 +72,9 @@ void Point::translada(float a, float b)
 
 void Point::imprime()
 {
-    cout << "(" << x << "," << y << ")" << endl;
+    //cout.unsetf ( std::ios::floatfield );
+    //cout.precision(1);
+    printf("(%.1f,%.1f)", x, y);
 }
 
 

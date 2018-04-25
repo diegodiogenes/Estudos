@@ -50,7 +50,10 @@ void Poligono::imprime()
 {
     for(int i=0; i<pos;i++){
         v[i].imprime();
+        cout << " -> ";
     }
+    v[0].imprime();
+    cout << '\n';
 }
 
 void Poligono::translada(float a, float b)
@@ -63,11 +66,13 @@ void Poligono::translada(float a, float b)
 void Poligono::rotaciona(float teta, Point a)
 {
     Point aux;
+    float novo_x, novo_y;
     teta = (teta*M_PI)/180;
     for(int i=0; i<pos; i++){
-        aux.setXY(v[i].getX(),v[i].getY());
-        aux.imprime();
-        v[i].setX((aux.getX() - a.getX())*cos(teta) - (aux.getY() - a.getY())*sin(teta));
-        v[i].setY((aux.getX() - a.getX())*sin(teta) + (aux.getY() - a.getY())*cos(teta));
+        aux = v[i].sub(a);
+        novo_x = aux.getX()*cos(teta) - aux.getY()*sin(teta);
+        novo_y = aux.getX()*sin(teta) + aux.getY()*cos(teta);
+        v[i].setXY(novo_x,novo_y);
+        v[i].add(a);
     }
 }
