@@ -4,10 +4,6 @@
 #include <cmath>
 using namespace std;
 
-Poligono::Poligono()
-{
-
-}
 
 Poligono::Poligono(int qtd = 100){
    v = new Point[qtd];
