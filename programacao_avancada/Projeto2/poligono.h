@@ -15,6 +15,11 @@ class Poligono
     int pos = 0;
 public:
     /**
+     * @brief Poligono é o construtor vazio da classe.
+     *
+     */
+    Poligono();
+    /**
      * @brief Poligono é o construtor da classe.
      *
      * @details Nele, um espaço para 100 pontos é liberado na

@@ -4,6 +4,11 @@
 
 using namespace std;
 
+Point::Point()
+{
+
+}
+
 Point::Point(float _x, float _y)
 {
     x = _x;

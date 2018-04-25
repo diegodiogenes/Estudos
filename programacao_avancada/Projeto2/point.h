@@ -12,7 +12,12 @@ class Point
 
 public:
     /**
-     * @brief Point é o construtor da classe.
+     * @brief Point é o construtor vazio da classe.
+     *
+     */
+    Point();
+    /**
+     * @brief Point é o construtor não vazio da classe.
      *
      * @param _x é a posição do ponto em relação ao
      * eixo das abscissas.

@@ -4,6 +4,11 @@
 #include <cmath>
 using namespace std;
 
+Poligono::Poligono()
+{
+
+}
+
 Poligono::Poligono(int qtd){
    v = new Point[qtd];
 }
