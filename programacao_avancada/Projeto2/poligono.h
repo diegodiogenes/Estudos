@@ -31,7 +31,7 @@ public:
      * pelo usuário.
      *
      */
-    Poligono(int qtd);
+    Poligono(int pos);
     ~Poligono();
     /**
      * @brief adicionaVertice Cria novos vértices ao polígono.

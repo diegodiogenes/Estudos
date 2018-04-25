@@ -9,7 +9,7 @@ Poligono::Poligono()
 
 }
 
-Poligono::Poligono(int qtd){
+Poligono::Poligono(int qtd = 100){
    v = new Point[qtd];
 }
 
