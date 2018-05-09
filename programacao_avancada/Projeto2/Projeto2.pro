@@ -3,13 +3,8 @@ CONFIG += console c++11
 CONFIG -= app_bundle
 CONFIG -= qt
 
-SOURCES += \
-        main.cpp \
-    point.cpp \
-    poligono.cpp \
-    retangulo.cpp
+SOURCES += main.cpp \
+    screen.cpp
 
 HEADERS += \
-    point.h \
-    poligono.h \
-    retangulo.h
+    screen.h
