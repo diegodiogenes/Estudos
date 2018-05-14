@@ -9,8 +9,8 @@ Screen::Screen(int _nlin, int _ncol)
         nlin = _nlin;
         ncol = _ncol;
     }
-    else
-        throw "Nº de linhas ou colunas menores que zero.";
+    else{ throw "Nº de linhas ou colunas menores que zero."; }
+
     matriz = vector<vector<char>>(_nlin, vector<char>(_ncol, ' '));
 
 

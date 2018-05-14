@@ -7,18 +7,25 @@ Retangulo::Retangulo(float x0, float y0, float largura, float altura, float fill
 
 void Retangulo::draw(Screen &t)
 {
+    //Desenha um retângulo totalmente preenchido.
     if(fillmode == 1){
-        for(int i = x0; i <= x0+altura; i++){
-            for(int j = y0; j <= y0+largura; j++){
+        for(int i = y0; i <= y0+altura; i++){
+            for(int j = x0; j <= x0+largura; j++){
                 t.setPixel(i,j);
             }
         }
     }
-    else if (fillmode == 0)
-        for(int i = x0; i <= x0+altura; i++){
-            for(int j = y0; j <= y0+largura; j++){
-                if((i == x0)&&)
+
+    //Desenha um retângulo não preenchido.
+    else if (fillmode == 0){
+        for(int i = y0; i <= y0+altura; i++){
+            for(int j = x0; j <= x0+largura; j++){
+                if((i == y0)||(j == x0)||(i == y0+altura)||(j == x0+largura))
                     t.setPixel(i,j);
             }
         }
+    }
+
+    else{ throw "O possíveis valores de fillmode são '0'(retângulo não preenchido) ou '1'(retângulo preenchido)"; }
+
 }
