@@ -1,6 +1,9 @@
 #include "screen.h"
+#include <iostream>
 
-Screen::Screen(int nlin, int ncol)
+using namespace std;
+
+Screen::Screen(int _nlin, int _ncol)
 {
     if(nlin>=0 && ncol>=0){
         nlin = _nlin;
@@ -28,7 +31,7 @@ void Screen::setBrush(char brush)
 
 }
 
-ostream &Screen::operator<<(ostream &os, Screen &t)
+ostream& operator<<(ostream &os, Screen &t)
 {
 
 }

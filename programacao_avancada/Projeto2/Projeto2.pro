@@ -4,7 +4,15 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += main.cpp \
-    screen.cpp
+    screen.cpp \
+    figurageometrica.cpp \
+    reta.cpp \
+    retangulo.cpp \
+    circulo.cpp
 
 HEADERS += \
-    screen.h
+    screen.h \
+    figurageometrica.h \
+    reta.h \
+    retangulo.h \
+    circulo.h
