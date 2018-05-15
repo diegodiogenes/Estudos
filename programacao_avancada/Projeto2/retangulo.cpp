@@ -1,8 +1,11 @@
 #include "retangulo.h"
 
-Retangulo::Retangulo(float x0, float y0, float largura, float altura, float fillmode)
+Retangulo::Retangulo(float _x0, float _y0, float _largura, float _altura, float _fillmode)
 {
-
+    x0 = _x0;
+    y0 = _y0;
+    largura = _largura;
+    fillmode = _fillmode;
 }
 
 void Retangulo::draw(Screen &t)
