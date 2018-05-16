@@ -6,14 +6,22 @@ using namespace std;
 
 Screen::Screen(int _nlin, int _ncol)
 {
+    nlin = _nlin;
+    ncol = _ncol;
+
+    matriz = vector<vector<char>>(_nlin, vector<char>(_ncol, ' '));
+
+}
+
+void Screen::setTamanho(int _nlin, int _ncol)
+{
     if(nlin>=0 && ncol>=0){
         nlin = _nlin;
         ncol = _ncol;
     }
-    else{ cout << "Nº de linhas ou colunas menores que zero."; }
+    else{ cout << "Numero de linhas ou colunas menores que zero."; }
 
     matriz = vector<vector<char>>(_nlin, vector<char>(_ncol, ' '));
-
 }
 
 void Screen::setPixel(int x, int y)

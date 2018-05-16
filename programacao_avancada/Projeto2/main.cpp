@@ -10,7 +10,7 @@
 
 using namespace std;
 
-int main(int argc, char *argv[])
+int main(/*int argc, char *argv[]*/)
 {
     Screen t(0,0);
     ifstream fin;
@@ -19,8 +19,11 @@ int main(int argc, char *argv[])
 
     list <FiguraGeometrica *> figuras;
 
-    fin.open("/home/diego/Estudos/programacao_avancada/Projeto2/dimensoes.txt");
-    fout.open("/home/diego/Estudos/programacao_avancada/Projeto2/tela.txt");
+    //fin.open("/home/diego/Estudos/programacao_avancada/Projeto2/dimensoes.txt");
+    //fout.open("/home/diego/Estudos/programacao_avancada/Projeto2/tela.txt");
+
+    fin.open("C:/Users/Dorgival/Desktop/Estudos/programacao_avancada/Projeto2/dimensoes.txt");
+    fout.open("C:/Users/Dorgival/Desktop/Estudos/programacao_avancada/Projeto2/tela.txt");
 
     if(!fin.is_open() || !fout.is_open()){
         cout << "Erro no arquivo de leitura ou saída";
@@ -35,7 +38,7 @@ int main(int argc, char *argv[])
             if(cmd.compare("dim")==0){
                 int x,y;
                 sstream >> x >> y;
-                t = Screen(x,y);
+                t.setTamanho(x, y);
             }
             if(cmd.compare("brush")==0){
                 char brush;
@@ -64,6 +67,7 @@ int main(int argc, char *argv[])
         }
 
     }
+    cout << "\n\n\n\n";
 
     for(auto it:figuras){
         it->draw(t);

@@ -39,6 +39,13 @@ public:
     Screen(int _nlin, int _ncol);
 
     /**
+     * @brief setTamanho
+     * @param _nlin
+     * @param _ncol
+     */
+    void setTamanho(int _nlin, int _ncol);
+
+    /**
      * @brief setPixel
      * @details
      * @param x
