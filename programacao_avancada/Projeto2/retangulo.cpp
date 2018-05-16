@@ -5,6 +5,7 @@ Retangulo::Retangulo(float _x0, float _y0, float _largura, float _altura, float 
     x0 = _x0;
     y0 = _y0;
     largura = _largura;
+    altura = _altura;
     fillmode = _fillmode;
 }
 
