@@ -36,7 +36,7 @@ public:
      * @param nlin
      * @param ncol
      */
-    Screen(int nlin, int ncol);
+    Screen(int _nlin, int _ncol);
 
     /**
      * @brief setPixel
@@ -57,7 +57,7 @@ public:
      * @details
      * @param brush
      */
-    void setBrush(char brush);
+    void setBrush(char _brush);
 
     /**
      * @brief operator <<
