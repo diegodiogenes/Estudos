@@ -48,6 +48,18 @@ int main(int argc, char *argv[])
                 sstream >> x0 >> y0 >> x1 >> y1;
                 figuras.push_back(new Reta(x0, y0, x1, y1));
             }
+            if(cmd.compare("retangulo")==0){
+                float x0, y0, altura, largura;
+                bool fillmode;
+                sstream >> x0 >> y0 >> altura >> largura >> fillmode;
+                figuras.push_back(new Retangulo(x0, y0, altura, largura, fillmode));
+            }
+            if(cmd.compare("circulo")==0){
+                int x0, y0, r;
+                bool fillmode;
+                sstream >> x0 >> y0>> r >> fillmode;
+                figuras.push_back(new Circulo(x0, y0, r, fillmode));
+            }
             cout << cmd << endl;
         }
 
@@ -57,6 +69,7 @@ int main(int argc, char *argv[])
         it->draw(t);
     }
 
+    cout << t;
     fout << t;
 
     return 0;
