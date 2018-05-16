@@ -1,5 +1,5 @@
 dim 50 50
-brush *
+brush D
 circulo 25 25 10 1
 retangulo 10 10 10 10 0
 reta 0 0 5 5
