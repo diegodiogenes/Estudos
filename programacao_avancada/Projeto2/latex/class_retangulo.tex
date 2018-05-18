@@ -1,0 +1,81 @@
+\hypertarget{class_retangulo}{}\section{Retangulo Class Reference}
+\label{class_retangulo}\index{Retangulo@{Retangulo}}
+
+
+The \mbox{\hyperlink{class_retangulo}{Retangulo}} class desenha um retângulo.  
+
+
+
+
+{\ttfamily \#include $<$retangulo.\+h$>$}
+
+Inheritance diagram for Retangulo\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_retangulo}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_retangulo_a733b3023ddff14f26b00d401b46411fd}{Retangulo}} (float \+\_\+x0, float \+\_\+y0, float \+\_\+largura, float \+\_\+altura, float \+\_\+fillmode)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_retangulo}{Retangulo}} é o construtor da classe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_retangulo_ac088dd6d3f4f3d3f80363a868c2e74f1}{draw}} (\mbox{\hyperlink{class_screen}{Screen}} \&t)
+\begin{DoxyCompactList}\small\item\em draw é a função chave para desenhar a figura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_retangulo}{Retangulo}} class desenha um retângulo. 
+
+Dentro da matriz que representa a tela, essa classe modifica posições específicas para que, quando colocado em um arquivo ou quando impresso em tela, forneça ao usuário um desenho de um retângulo. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_retangulo_a733b3023ddff14f26b00d401b46411fd}\label{class_retangulo_a733b3023ddff14f26b00d401b46411fd}} 
+\index{Retangulo@{Retangulo}!Retangulo@{Retangulo}}
+\index{Retangulo@{Retangulo}!Retangulo@{Retangulo}}
+\subsubsection{\texorpdfstring{Retangulo()}{Retangulo()}}
+{\footnotesize\ttfamily Retangulo\+::\+Retangulo (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x0,  }\item[{float}]{\+\_\+y0,  }\item[{float}]{\+\_\+largura,  }\item[{float}]{\+\_\+altura,  }\item[{float}]{\+\_\+fillmode }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_retangulo}{Retangulo}} é o construtor da classe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x0} & é a posição fornecida pelo usuário, no eixo x, lido de um arquivo de texto. \\
+\hline
+{\em y0} & é a posição fornecida pelo usuário, no eixo x, lido de um arquivo de texto. \\
+\hline
+{\em largura} & fornecida pelo usuário a partir do arquivo de texto. \\
+\hline
+{\em fillmode} & é o valor (0 ou 1) fornecido pelo usuário para indicar se será desenhado um retângulo totalmente preenchido ou apenas seu contorno. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_retangulo_ac088dd6d3f4f3d3f80363a868c2e74f1}\label{class_retangulo_ac088dd6d3f4f3d3f80363a868c2e74f1}} 
+\index{Retangulo@{Retangulo}!draw@{draw}}
+\index{draw@{draw}!Retangulo@{Retangulo}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Retangulo\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_screen}{Screen}} \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+draw é a função chave para desenhar a figura. 
+
+Nela, o desenho do retângulo é feito de forma simples. Para os casos onde devemos preencher totalmente o retângulo, fazemos com que todos os pontos entre a lateral esquerda e a direita fosse preenchido, linha a linha. Para o caso de contorno, as posições que tivessem coordenadas (x0,y) ou (x,y0) fossem modificados, 
+\begin{DoxyParams}{Parameters}
+{\em t} & é o endereço da matriz que representa a tela onde o retângulo será desenhado. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_figura_geometrica}{Figura\+Geometrica}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Dorgival/\+Desktop/\+Estudos/programacao\+\_\+avancada/\+Projeto2/retangulo.\+h\item 
+C\+:/\+Users/\+Dorgival/\+Desktop/\+Estudos/programacao\+\_\+avancada/\+Projeto2/retangulo.\+cpp\end{DoxyCompactItemize}

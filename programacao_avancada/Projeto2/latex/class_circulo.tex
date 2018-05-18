@@ -1,0 +1,102 @@
+\hypertarget{class_circulo}{}\section{Circulo Class Reference}
+\label{class_circulo}\index{Circulo@{Circulo}}
+
+
+The \mbox{\hyperlink{class_circulo}{Circulo}} class desenha um círculo.  
+
+
+
+
+{\ttfamily \#include $<$circulo.\+h$>$}
+
+Inheritance diagram for Circulo\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_circulo}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_circulo_a5e0622e82a3ce86c9f7d247956bf98b3}{Circulo}} (float x0, float y0, float raio, float fillmode)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_circulo}{Circulo}} é o construtor da classe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_circulo_a593787d6e0618c2eded23e8839e7bea6}{draw}} (\mbox{\hyperlink{class_screen}{Screen}} \&t)
+\begin{DoxyCompactList}\small\item\em draw é a função chave para desenhar a figura. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_circulo_ac7946aa1d6e6a1290d123bdd542a2a90}{pontos\+Da\+Circunferencia}} (float x, float y, \mbox{\hyperlink{class_screen}{Screen}} \&t)
+\begin{DoxyCompactList}\small\item\em pontos\+Da\+Circunferencia modifica de fato o valor da matriz nos pontos determinados pelo método draw. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_circulo}{Circulo}} class desenha um círculo. 
+
+Dentro da matriz que representa a tela, essa classe modifica posições específicas para que, quando colocado em um arquivo ou quando impresso em tela, forneça ao usuário um desenho de um disco ou de uma circunferência. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_circulo_a5e0622e82a3ce86c9f7d247956bf98b3}\label{class_circulo_a5e0622e82a3ce86c9f7d247956bf98b3}} 
+\index{Circulo@{Circulo}!Circulo@{Circulo}}
+\index{Circulo@{Circulo}!Circulo@{Circulo}}
+\subsubsection{\texorpdfstring{Circulo()}{Circulo()}}
+{\footnotesize\ttfamily Circulo\+::\+Circulo (\begin{DoxyParamCaption}\item[{float}]{x0,  }\item[{float}]{y0,  }\item[{float}]{raio,  }\item[{float}]{fillmode }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_circulo}{Circulo}} é o construtor da classe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x0} & é a posição fornecida pelo usuário, no eixo x, lido de um arquivo de texto. \\
+\hline
+{\em y0} & é a posição fornecida pelo usuário, no eixo x, lido de um arquivo de texto. \\
+\hline
+{\em raio} & é o raio fornecido pelo usuário a partir do arquivo de texto. \\
+\hline
+{\em fillmode} & é o valor (0 ou 1) fornecido pelo usuário para indicar se será desenhado um disco ou uma circunferência. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_circulo_a593787d6e0618c2eded23e8839e7bea6}\label{class_circulo_a593787d6e0618c2eded23e8839e7bea6}} 
+\index{Circulo@{Circulo}!draw@{draw}}
+\index{draw@{draw}!Circulo@{Circulo}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Circulo\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_screen}{Screen}} \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+draw é a função chave para desenhar a figura. 
+
+Nela, o desenho da circunferência é feito usando o algoritmo de Bresenham para traçado de circunferências. Para os casos onde devemos preencher totalmente o círculo, fazemos com que todos os pontos que tivessem uma distância ao centro menor ou igual ao raio fossem preenchidos. Em outras palavras, usamos a inequação da circunferência para determinarmos quais pontos são internos ou pertencentes à ela (x$^\wedge$2+y$^\wedge$2 $<$= raio$^\wedge$2). 
+\begin{DoxyParams}{Parameters}
+{\em t} & é o endereço da matriz que representa a tela onde o círculo será desenhado. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_figura_geometrica}{Figura\+Geometrica}}.
+
+\mbox{\Hypertarget{class_circulo_ac7946aa1d6e6a1290d123bdd542a2a90}\label{class_circulo_ac7946aa1d6e6a1290d123bdd542a2a90}} 
+\index{Circulo@{Circulo}!pontos\+Da\+Circunferencia@{pontos\+Da\+Circunferencia}}
+\index{pontos\+Da\+Circunferencia@{pontos\+Da\+Circunferencia}!Circulo@{Circulo}}
+\subsubsection{\texorpdfstring{pontos\+Da\+Circunferencia()}{pontosDaCircunferencia()}}
+{\footnotesize\ttfamily void Circulo\+::pontos\+Da\+Circunferencia (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{\mbox{\hyperlink{class_screen}{Screen}} \&}]{t }\end{DoxyParamCaption})}
+
+
+
+pontos\+Da\+Circunferencia modifica de fato o valor da matriz nos pontos determinados pelo método draw. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & representa a coluna que será modificada na matriz. \\
+\hline
+{\em y} & representa a linha que será modificada na matriz. \\
+\hline
+{\em t} & é a tela. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Dorgival/\+Desktop/\+Estudos/programacao\+\_\+avancada/\+Projeto2/circulo.\+h\item 
+C\+:/\+Users/\+Dorgival/\+Desktop/\+Estudos/programacao\+\_\+avancada/\+Projeto2/circulo.\+cpp\end{DoxyCompactItemize}

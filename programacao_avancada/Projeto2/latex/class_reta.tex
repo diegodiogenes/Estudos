@@ -1,0 +1,81 @@
+\hypertarget{class_reta}{}\section{Reta Class Reference}
+\label{class_reta}\index{Reta@{Reta}}
+
+
+The \mbox{\hyperlink{class_reta}{Reta}} class desenha uma reta.  
+
+
+
+
+{\ttfamily \#include $<$reta.\+h$>$}
+
+Inheritance diagram for Reta\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_reta}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_reta_a9cde511ceb1d4e6638aaf735dfc24a7c}{Reta}} (float \+\_\+x0, float \+\_\+y0, float \+\_\+x1, float \+\_\+y1)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_reta}{Reta}} é o construtor da classe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_reta_ac2e9805183cd474b62bffd8b032cd780}{draw}} (\mbox{\hyperlink{class_screen}{Screen}} \&t)
+\begin{DoxyCompactList}\small\item\em draw é a função chave para desenhar a figura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{class_reta}{Reta}} class desenha uma reta. 
+
+Dentro da matriz que representa a tela, essa classe modifica posições específicas para que, quando colocado em um arquivo ou quando impresso em tela, forneça ao usuário um desenho de uma reta. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_reta_a9cde511ceb1d4e6638aaf735dfc24a7c}\label{class_reta_a9cde511ceb1d4e6638aaf735dfc24a7c}} 
+\index{Reta@{Reta}!Reta@{Reta}}
+\index{Reta@{Reta}!Reta@{Reta}}
+\subsubsection{\texorpdfstring{Reta()}{Reta()}}
+{\footnotesize\ttfamily Reta\+::\+Reta (\begin{DoxyParamCaption}\item[{float}]{\+\_\+x0,  }\item[{float}]{\+\_\+y0,  }\item[{float}]{\+\_\+x1,  }\item[{float}]{\+\_\+y1 }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_reta}{Reta}} é o construtor da classe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+x0} & é o valor da posição inicial em x do ponto, fornecido pelo usuário. \\
+\hline
+{\em \+\_\+y0} & é o valor da posição inicial em y do ponto, fornecido pelo usuário. \\
+\hline
+{\em \+\_\+x1} & é o valor da posição final em x do ponto, fornecido pelo usuário. \\
+\hline
+{\em \+\_\+y1} & é o valor da posição final em y do ponto, fornecido pelo usuário. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_reta_ac2e9805183cd474b62bffd8b032cd780}\label{class_reta_ac2e9805183cd474b62bffd8b032cd780}} 
+\index{Reta@{Reta}!draw@{draw}}
+\index{draw@{draw}!Reta@{Reta}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Reta\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_screen}{Screen}} \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+draw é a função chave para desenhar a figura. 
+
+Nela, o desenho da reta é feito usando o algoritmo de Bresenham para traçado de traços/retas. 
+\begin{DoxyParams}{Parameters}
+{\em t} & é o endereço da matriz que representa a tela onde a reta será desenhada. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_figura_geometrica}{Figura\+Geometrica}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Dorgival/\+Desktop/\+Estudos/programacao\+\_\+avancada/\+Projeto2/reta.\+h\item 
+C\+:/\+Users/\+Dorgival/\+Desktop/\+Estudos/programacao\+\_\+avancada/\+Projeto2/reta.\+cpp\end{DoxyCompactItemize}
